@@ -8,12 +8,24 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 30
     },
 
+    containerImage: {
+        flexDirection: 'row',       
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    botaozinhoImage: {
+        width: 20, 
+        height: 20,
+        marginTop: 30,
+        marginBottom: 1
+    },
+
     logoImage: {
         width: 110, 
         height: 110,
-        justifyContent: 'center'
+ 
     },
-
 
     text: {
         color: '#fff',

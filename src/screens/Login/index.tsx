@@ -3,6 +3,7 @@ import { styles } from './styles'
 import { StatusBar } from 'expo-status-bar';
 import { View, Image, Text, TextInput, TouchableOpacity, Linking } from 'react-native';
 import Logo from '../../assets/disneyplus.png'
+import Flechinha from '../../assets/back.png'
 
 export const Login = () => {
 
@@ -13,13 +14,21 @@ export const Login = () => {
             />
 
             <Image
+                source={Flechinha}
+                style={styles.botaozinhoImage}
+            />
+
+            <View style={styles.containerImage}>
+                <Image
                 source={Logo}
                 style={styles.logoImage}
-            />
+                />
+                </View>
 
             <Text style={styles.text}>
                 Log in with your email
             </Text>
+            
 
             <TextInput
                 style={styles.input}

@@ -10,15 +10,20 @@ export const styles = StyleSheet.create({
 
     containerImage: {
         flexDirection: 'row',
-        justifyContent: "space-between",
-        marginBottom: 40,
+        justifyContent: 'space-evenly',
+        marginTop: 20,
+        marginBottom: 20,
 
     },
 
     image: {
-        width: 100, 
-        height: 100,
-
+        width: 90, 
+        height: 90,
+    },
+    
+    containerButton: {
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
     button: {
@@ -26,13 +31,15 @@ export const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 7,
         alignItems: 'center',
-        marginTop: 20
+        marginTop: 20,
+        width: 160,
     },
     
     buttonText: {
         color: '#FFF',
-        fontSize: 16,
+        fontSize: 18,
         fontWeight: 'bold',
+        
     },    
 
     row: {
@@ -46,8 +53,22 @@ export const styles = StyleSheet.create({
 
     title: {
         color: '#B1B1BB',
-        fontSize: 13,
-        padding: 10,
-        marginTop: 10
+        fontSize: 14,
+        padding: 15,
+        marginTop: 8
     },
+
+    containerImageNavegacao: {
+        flexDirection: 'row',
+        justifyContent: 'space-evenly',
+        marginTop: 2,
+        marginBottom: 20,
+
+    },
+
+    navegacao: {
+        width: 20, 
+        height: 20,
+        padding: 10,
+    }
 })
