@@ -3,7 +3,7 @@ import { StyleSheet, Platform } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#222536',
+        backgroundColor: '#1A1C2B',
         padding: Platform.OS ==="ios" ? 64: 30,
         paddingHorizontal: 30
     },
@@ -11,8 +11,9 @@ export const styles = StyleSheet.create({
     logoImage: {
         width: 110, 
         height: 110,
-        margin: 
+        justifyContent: 'center'
     },
+
 
     text: {
         color: '#fff',
@@ -48,4 +49,10 @@ export const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: 'bold'
     },
+
+    hyperlinkStyle: {
+        color: '#FFF',
+        fontSize: 14,
+        marginTop: 2
+      },
 })

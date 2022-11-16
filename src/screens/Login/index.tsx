@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { styles } from './styles'
 import { StatusBar } from 'expo-status-bar';
-import { View, Image, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Image, Text, TextInput, TouchableOpacity, Linking } from 'react-native';
 import Logo from '../../assets/disneyplus.png'
 
 export const Login = () => {
@@ -38,6 +38,14 @@ export const Login = () => {
             <Text style={[styles.title, { marginVertical: 20}]}
             >
                 New to Disney+?
+            </Text>
+
+            <Text style={[styles.hyperlinkStyle, { marginVertical: 20 }]}
+                onPress={() => {
+                    Linking.openURL('#');
+                  }}
+            >
+                SIGN UP
             </Text>
         </View>
 
